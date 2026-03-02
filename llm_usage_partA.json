@@ -1,0 +1,99 @@
+{
+  "student_metadata": {
+    "name": "Shiven Ahuja",
+    "roll_number": "230114",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-02"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.2",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-02",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5",
+      "purpose": "Evaluating whether selected paper satisfies CORE A* and method constraints",
+      "prompt": "How does the paper 'Computing Gaussian Mixture Models with EM Using Equivalence Constraints' stand against my constraints?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Helped verify venue, year, and method alignment with GMM and EM.",
+      "student_verification": "Verified NeurIPS 2010 venue and confirmed it satisfies 2009–2012 requirement using CORE ranking portal.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-02",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5",
+      "purpose": "Understanding the conceptual contribution of the paper",
+      "prompt": "Give me the gist of the paper and what research is done here.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Clarified how equivalence constraints modify the EM algorithm.",
+      "student_verification": "Re-read EM derivations in the paper and matched explanation with equations in Section 3.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-02",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5",
+      "purpose": "Comparing selected paper with other candidate papers",
+      "prompt": "Compare this paper with other SVM and GMM papers in terms of reproducibility and difficulty.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Helped evaluate relative mathematical difficulty and implementation complexity.",
+      "student_verification": "Checked abstracts of Pegasos and other SVM optimization papers to confirm higher optimization complexity.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-02",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5",
+      "purpose": "Evaluating reproducibility feasibility",
+      "prompt": "Is this paper reproducible on a CPU and does it require proprietary datasets?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed synthetic Gaussian datasets can be used.",
+      "student_verification": "Verified experiments use standard clustering benchmarks and synthetic data.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "How does the paper stand against my exam constraints?",
+      "why_important": "Ensured compliance with CORE A* venue and methodological requirements."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Give me the gist of the paper and what research is done here.",
+      "why_important": "Helped understand EM modification and main theoretical contribution."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "Compare this paper with other SVM and GMM papers.",
+      "why_important": "Helped assess difficulty and select a manageable paper."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "Is this paper reproducible on CPU and with synthetic data?",
+      "why_important": "Confirmed feasibility for Parts B and C reproduction."
+    }
+  ],
+  "student declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding acknowledged": true,
+    "signature": "YOUR_NAME",
+    "date": "2026-03-02"
+  }
+}
