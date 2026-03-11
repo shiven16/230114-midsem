@@ -1,0 +1,85 @@
+{
+  "student_metadata": {
+    "name": "Shiven Ahuja",
+    "roll_number": "230114",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 2.3",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Design an ablation study for the constrained clustering experiment",
+      "prompt": "How can I design an ablation study to analyze how the number of constraints affects clustering performance?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested varying the number of constraints and measuring ARI for each case.",
+      "student_verification": "Verified that ARI values correspond correctly to each experiment.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Implemented experiments with different constraint sizes."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Create a failure case for the clustering method",
+      "prompt": "How can I design a dataset where Gaussian Mixture Model clustering fails?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested increasing cluster_std in make_blobs to create overlapping clusters.",
+      "student_verification": "Confirmed that increasing cluster_std leads to cluster overlap and lower ARI.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Generated a new dataset with high cluster_std for failure analysis."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.3",
+      "purpose": "Structure the discussion section for experiment analysis",
+      "prompt": "How should I structure the analysis for the ablation study and failure case experiments?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Suggested discussing constraint effects, model assumptions, and limitations.",
+      "student_verification": "Checked that the explanation aligns with the assumptions discussed in Task 1.2.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Expanded the explanation using results obtained from the experiments."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "How can I design an ablation study to analyze the effect of constraints on clustering performance?",
+      "why_important": "Helped design the main experiment analyzing constraint impact."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "How can I generate a dataset where Gaussian Mixture Model clustering fails?",
+      "why_important": "Used to demonstrate a limitation of the method."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Shiven Ahuja",
+    "date": "2026-03-12"
+  }
+}

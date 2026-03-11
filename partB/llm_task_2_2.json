@@ -1,0 +1,85 @@
+{
+  "student_metadata": {
+    "name": "Shiven Ahuja",
+    "roll_number": "230114",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 2.2",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.2",
+      "purpose": "Implement baseline clustering using Gaussian Mixture Models",
+      "prompt": "How do I implement Gaussian Mixture Model clustering in Python using sklearn?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided the basic implementation using sklearn.mixture.GaussianMixture.",
+      "student_verification": "Checked sklearn documentation to confirm correct usage of the API.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Adapted the code to match the dataset and experiment setup."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.2",
+      "purpose": "Simulate equivalence constraints for constrained clustering",
+      "prompt": "How can I simulate equivalence constraints or chunklets when implementing constrained clustering for a Gaussian Mixture Model experiment?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Suggested grouping points into chunklets and approximating them by using mean feature values.",
+      "student_verification": "Verified that chunklets in the paper enforce the same cluster assignment for grouped points.",
+      "confidence_level": 4,
+      "code_used_verbatim": false,
+      "student_modification": "Implemented chunklets and applied them to the dataset before fitting the GMM."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 2.2",
+      "purpose": "Evaluate clustering performance",
+      "prompt": "What metric should I use to compare baseline clustering and constrained clustering?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested using Adjusted Rand Index because the dataset contains ground truth labels.",
+      "student_verification": "Verified metric choice using sklearn documentation.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Integrated ARI computation into the experiment code."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 2,
+      "prompt": "How can I simulate equivalence constraints or chunklets for constrained clustering experiments?",
+      "why_important": "Helped implement the constrained clustering idea proposed in the paper."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 1,
+      "prompt": "How do I implement Gaussian Mixture Model clustering in Python using sklearn?",
+      "why_important": "Required for implementing the baseline method."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Shiven Ahuja",
+    "date": "2026-03-12"
+  }
+}
