@@ -1,0 +1,85 @@
+{
+  "student_metadata": {
+    "name": "Shiven Ahuja",
+    "roll_number": "230114",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 1.2",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 1.2",
+      "purpose": "Identify the key assumptions required by the constrained EM algorithm described in the paper",
+      "prompt": "In the paper 'Computing Gaussian Mixture Models with EM Using Equivalence Constraints', what assumptions does the method rely on regarding chunklets, Gaussian distributions, and constraint structure?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Helped identify the main assumptions such as chunklet consistency, Gaussian mixture modeling assumption, and sparsity of negative constraints.",
+      "student_verification": "Verified by reviewing Section 2.1 and Section 2.2 of the paper where chunklets and constraint handling are described.",
+      "confidence_level": 4,
+      "code_used_verbatim": false,
+      "student_modification": "Rewrote the assumptions in my own words and added explanation and references to the paper."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 1.2",
+      "purpose": "Understand how incorrect equivalence constraints could affect clustering results",
+      "prompt": "What would happen if chunklets created from equivalence constraints contain points from different true clusters in the constrained EM algorithm?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Explained how incorrect chunklets force incorrect cluster assignments and distort Gaussian parameter estimation.",
+      "student_verification": "Checked the EM formulation in Section 2.1 to confirm that chunklets share a single cluster variable.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Used the explanation to construct a violation scenario for the assumption."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 1.2",
+      "purpose": "Structure the markdown explanation of assumptions according to the assignment format",
+      "prompt": "Help me structure three assumptions for the constrained EM paper with sections for assumption, why the method needs it, violation scenario, and reference.",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Helped format the explanation into clearly separated sections required by the assignment instructions.",
+      "student_verification": "Reviewed the final markdown to ensure all explanations align with the method described in the paper.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Adjusted wording and references to match the paper."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "In the paper 'Computing Gaussian Mixture Models with EM Using Equivalence Constraints', what assumptions does the method rely on regarding chunklets, Gaussian distributions, and constraint structure?",
+      "why_important": "This prompt helped identify the core assumptions required by the algorithm."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "What would happen if chunklets created from equivalence constraints contain points from different true clusters in the constrained EM algorithm?",
+      "why_important": "This helped explain the violation scenario required for the assignment."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Shiven Ahuja",
+    "date": "2026-03-12"
+  }
+}
