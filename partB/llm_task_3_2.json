@@ -1,0 +1,85 @@
+{
+  "student_metadata": {
+    "name": "Shiven Ahuja",
+    "roll_number": "230114",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 3.2",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Design a failure case experiment for constrained clustering",
+      "prompt": "How can I create a failure scenario for Gaussian Mixture Models with equivalence constraints?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested introducing incorrect equivalence constraints that group points from different clusters.",
+      "student_verification": "Verified that the paper assumes chunklets contain points from the same true cluster.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Implemented noisy chunklets using randomly selected points."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Evaluate impact of incorrect constraints on clustering performance",
+      "prompt": "How should I compare clustering results when constraints are correct versus incorrect?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested computing ARI for both cases and comparing them using a bar chart.",
+      "student_verification": "Confirmed that ARI is the same metric used in previous tasks.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Adapted the experiment using the dataset from Task 2."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "ChatGPT",
+      "model": "GPT-5.3",
+      "task_tag": "Task 3.2",
+      "purpose": "Interpret failure case results",
+      "prompt": "Why do incorrect equivalence constraints reduce clustering performance in constrained EM algorithms?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Explained that incorrect chunklets force points from different clusters to share the same Gaussian component.",
+      "student_verification": "Cross-checked with the assumptions discussed earlier in Task 1.2.",
+      "confidence_level": 5,
+      "code_used_verbatim": false,
+      "student_modification": "Expanded explanation in the notebook using observed ARI results."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "How can I design a failure case experiment for constrained clustering with Gaussian Mixture Models?",
+      "why_important": "This prompt helped design the main experiment required for Task 3.2."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 3,
+      "prompt": "Why do incorrect equivalence constraints harm clustering performance?",
+      "why_important": "Helped interpret the results of the failure case experiment."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for this task.",
+    "understanding_acknowledged": true,
+    "signature": "Shiven Ahuja",
+    "date": "2026-03-12"
+  }
+}
